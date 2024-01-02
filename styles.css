@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+    background: #232323;
+    box-sizing: border-box;
+    min-width: 1350px;
+    max-width: 3000px;
+}
+
+.cover {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 999;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFF;
+    align-items: center;
+    background: rgb(0 0 0 / 40%);
+}
+
+.logo {
+    margin-right: 200px;
+}
+
+.svg {
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229,9,20);
+    fill: currentColor;
+    display: block;
+}
+
+.sub {
+    display: flex;
+    margin-left: 90px;
+}
+
+.selection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #888;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    height: 32px;
+    width: 90px;
+    margin-right: 20px;
+}
+
+.selection:hover {
+    outline: 2px solid #FFF;
+    outline-offset: 1px;
+}
+
+.selection i {
+    margin-right: 5px;
+}
+
+.signin button {
+    background: rgb(229, 9, 20, 1);  
+    padding: 0 12px; 
+    font-size: 14px;
+    font-weight: bold;
+    width: 76px;
+    height: 32px;
+    color: #FFF;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.welcome {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 40px;
+    background: rgb(0 0 0 / 50%);
+    margin: 0;
+    text-align: center;
+}
+
+.welcome .wp1 {
+    font-weight: 900;
+    font-size: 50px;
+    height: 136px;
+    width: 80%;
+}
+
+.welcome .wp2 {
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.welcome .wp2 p {
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.wel-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wel-in input{
+    width: 376px;
+    color: #FFF;
+    height: 56px;
+    padding: 0 0 0 10px;
+    background: rgb(0 0 0 / 20%);
+    outline: none;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #DDD;
+}
+
+input:focus::placeholder {
+    transform: translateY(-18px);
+    font-size: 12px;
+    transition: transform 0.3s, font-size 0.3s;
+    padding-bottom: 2px;
+    color: #DDD;
+}
+
+.wel-in button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    color: #FFF;
+    font-size: 1.5rem;
+    height: 60px;
+    background: rgb(229, 9, 20, 1);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.default {
+    margin-top: 5px;
+}
+
+button:hover {
+    background: rgb(193, 17, 25);
+}
+
+.vsection {
+    display: block;
+}
+
+.v {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background: #000000;
+    margin-top: 10px;
+    height: 500px;
+}
+
+.v1 .content {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 430px;
+    font-size: 48px;
+    font-weight: 900;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.v1 .content p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.v1 .source{
+    float: right;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.v1 .source img {
+    position: absolute;
+    height: 350px;
+    z-index: 5;
+}
+
+.v1 .source video {
+    position: absolute;
+    width: 338px;
+    object-fit: contain;
+    top: 74px;
+    right: 0;
+}
+
+.v2 .source img {
+    height: 400px;
+    margin-bottom: 40px;
+}
+
+.v2 .content {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    height: 430px;
+    font-size: 48px;
+    font-weight: 900;
+    flex-direction: column;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.v2 .content p {
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.v3 .vv .source video {
+    width: 300px;
+    right: 20px;
+    top: 40px;
+}
+
+.v4 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+}
+
+.v4 p {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.quest {
+    width: 80%;
+    min-height: 75px;
+    background-color: #303030;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    margin: 5px 0;
+}
+  
+.quest .textbox {
+    display: flex;
+    text-align: left;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: center;
+    font-size: 25px;
+    margin: 0 30px;
+    word-spacing: 5px;
+    text-align: left;
+}
+  
+.quest i {
+    margin: 0 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+  
+.quest:focus {
+    background-color: red;
+}
+
+.stat {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.wel-in {
+    margin-bottom: 60px;
+}
+  
+.v5 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #000000;
+    justify-content: center;
+    margin-top: 10px;
+    height: 300px;
+    color: #999;
+    font-size: 16px;
+}
+
+.v5c {
+    margin-left: 205px;
+    font-size: 18px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.selection {
+    color: #DDDDDD;
+    margin-left: 205px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.v5 h4 {
+    color: #DDD;
+    margin-left: 205px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
